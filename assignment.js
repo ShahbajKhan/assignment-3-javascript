@@ -1,3 +1,5 @@
+// https://github.com/ShahbajKhan/assignment-3-javascript
+
 function kilometerToMeter(distanceInKilometer) {
 
     //Error Handling for negative distance
@@ -46,9 +48,9 @@ function budgetCalculator(watches, mobiles, laptops) {
 
 function hotelCost(daysStayed) {
     var cost = 0;
-    //Error Handling for negative days.
+    //Error Handling for negative.
     if (daysStayed < 0) {
-        return "Days cannot be negative";
+        return "Days cannot be negative or Float. Please give integer Inputs";
     }
     //For The First Ten days cost = 100taka per day 
     else if (daysStayed <= 10) {
@@ -80,11 +82,11 @@ function megaFriend(nameOfFriends) {
     if (nameOfFriends.length == 0) {
         return "No names of friends are given. Array is empty";
     }
+    //Error Handling for Inputs other than string
     else {
-        //Error Handling for Inputs other than string
         for (var i = 0; i < nameOfFriends.length; i++) {
             if (typeof nameOfFriends[i] == "number") {
-                return "Invalid input. Please provide string type data in the array";
+                return "Invalid input. Please provide string type data in the array for names";
             }
         }
     }
@@ -101,7 +103,7 @@ function megaFriend(nameOfFriends) {
     return longestElement;
 
 }
-var nameOfFriends = ["sjdn", "snsaj s", "saja jasjdsaj sndj",1];
-console.log(megaFriend(nameOfFriends));
+
+
 
 
